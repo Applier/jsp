@@ -27,7 +27,7 @@
             <label>Votre email</label>
             <input type="email" id="mailPro" name="mailPro" placeholder="Email"/>
             <label>Votre numéro</label>
-            <input type="tel" id="numTel" name="numTel" placeholder="Numéro de téléphone"/>  
+            <input type="tel" id="numTel" name="numTel" placeholder="Numéro"/>  
             <br/>
             <label>Votre date de naissance</label>
             <input type="date" id="dateNaissance" name="dateNaissance" placeholder="JJ/MM/AAAA"/> 
