@@ -4,10 +4,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Applier.</title>
+        <title>Profil</title>
         <meta charset="utf-8">
-        <link rel='stylesheet' type='text/css' href='../css/style.css'/>
-        <link rel="stylesheet" type="text/css" href="../css/animate-custom.css"/>
+        <link rel="stylesheet" type="text/css" href="<c:url value="/css/style.css"/>" />
+        <link rel="stylesheet" type="text/css" href="<c:url value="/css/animate-custom.css"/>" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -18,16 +18,16 @@
           <div class="title">
             <div class="profil"></div><h1 style="font-color:#8a0808">Mon profil</h1>
           </div>
-        <form>
+        <form method="post" action="<c:url value="/profil" />">
             <label>Votre nom</label>
-            <input type="text" placeholder="Nom"/>
+            <input type="text" id="nom" name="nom" placeholder="Nom"/>
             <label>Votre prénom</label>
-            <input type="text" placeholder="Prénom"/>
+            <input type="text" id="prenom" name="prenom" placeholder="Prénom"/>
             <br/>
             <label>Votre email</label>
-            <input type="mail" placeholder="Email"/>
+            <input type="text" id="mail" name="mail" placeholder="Email"/>
             <label>Votre numéro</label>
-            <input type="tel" placeholder="Numéro"/>  
+            <input type="text" id="numTel" name="numel" placeholder="Numéro de téléphone"/>  
             <br/>
             <label>Votre date de naissance</label>
             <input type="date" placeholder="JJ/MM/AAAA"/> 
@@ -70,8 +70,12 @@
             </select>
             <input type="text" placeholder="Détails"/></div>
             
+        <button>Mettre à jour le profil</button>
+            
         </form>   
         </div>
+
+		
 
       </div>
       <div class="left">
@@ -91,8 +95,8 @@
           </div>
           <div class="button-container">
                 <ul class="boutons">
-                        <a href="../restricted/index.jsp"><li> Voir mes offres </li></a><br>
-                        <a href="../restricted/profil.jsp"><li> Modifier mon profil </li></a><br>
+                        <a href=""><li> Voir mes offres </li></a><br>
+                        <a href="<c:url value="/profil"/>"><li> Modifier mon profil </li></a><br>
                         <a href=""><li> Voir mes correspondances </li></a><br>
                         <a href=""><li> Créer mon CV </li></a>
                 </ul>
