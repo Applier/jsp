@@ -25,16 +25,16 @@
             <input type="text" id="prenom" name="prenom" placeholder="Prénom"/>
             <br/>
             <label>Votre email</label>
-            <input type="text" id="mail" name="mail" placeholder="Email"/>
+            <input type="email" id="mailPro" name="mailPro" placeholder="Email"/>
             <label>Votre numéro</label>
-            <input type="text" id="numTel" name="numel" placeholder="Numéro de téléphone"/>  
+            <input type="tel" id="numTel" name="numTel" placeholder="Numéro de téléphone"/>  
             <br/>
             <label>Votre date de naissance</label>
-            <input type="date" placeholder="JJ/MM/AAAA"/> 
+            <input type="date" id="dateNaissance" name="dateNaissance" placeholder="JJ/MM/AAAA"/> 
             <br/>
             <div class="long">
             <label>Votre adresse</label>
-            <input type="text" placeholder="Numéro, rue, code postal..."/></div>
+            <input type="long" ide="adresse" name="adresse" placeholder="Numéro, rue, code postal..."/></div>
             <br/>
             <label>Votre parcours scolaire</label>
             <br/>
