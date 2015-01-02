@@ -6,8 +6,8 @@
     <head>
         <title>Applier.</title>
         <meta charset="utf-8">
-        <link rel='stylesheet' type='text/css' href='../css/style.css'/>
-        <link rel='stylesheet' type='text/css' href='../css/animate-custom.css'/>
+        <link rel="stylesheet" type="text/css" href="<c:url value="/css/style.css"/>" />
+        <link rel="stylesheet" type="text/css" href="<c:url value="/css/animate-custom.css"/>" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -88,8 +88,8 @@
           </div>
           <div class="button-container">
                 <ul class="boutons">
-                        <a href="/applier/restricted/index.jsp"><li> Voir mes offres </li></a><br>
-                        <a href="/applier/restricted/profil.jsp"><li> Modifier mon profil </li></a><br>
+                        <a href="/applier/index"><li> Voir mes offres </li></a><br>
+                        <a href="/applier/profil"><li> Modifier mon profil </li></a><br>
                         <a href=""><li> Voir mes correspondances </li></a><br>
                         <a href=""><li> Créer mon CV </li></a>
                 </ul>
