@@ -34,7 +34,7 @@
             <br/>
             <div class="long">
             <label>Votre adresse</label>
-            <input type="long" ide="adresse" name="adresse" placeholder="Numéro, rue, code postal..."/></div>
+            <input type="long" id="adresse" name="adresse" placeholder="Numéro, rue, code postal..."/></div>
             <br/>
             <label>Votre parcours scolaire</label>
             <br/>
@@ -44,7 +44,7 @@
             <input type="date" placeholder="Date fin"/>
             <div class="long">
             <input type="text" placeholder="Nom de l'établissement"/>
-            <input type="text" placeholder="Résumé"/></div>
+            <input type="long" placeholder="Résumé"/></div>
             <br/>
             <label>Vos expériences</label>
             <br/>
@@ -54,7 +54,7 @@
             <input type="date" placeholder="Date fin"/>
             <div class="long">
             <input type="text" placeholder="Nom de l'établissement"/>
-            <input type="text" placeholder="Résumé"/></div>
+            <input type="long" placeholder="Résumé"/></div>
             <br/>
             <label>Vos compétences</label>
             <br/>
@@ -95,8 +95,8 @@
           </div>
           <div class="button-container">
                 <ul class="boutons">
-                        <a href=""><li> Voir mes offres </li></a><br>
-                        <a href="<c:url value="/profil"/>"><li> Modifier mon profil </li></a><br>
+                        <a href="/applier/index"><li> Voir mes offres </li></a><br>
+                        <a href="/applier/profil"><li> Modifier mon profil </li></a><br>
                         <a href=""><li> Voir mes correspondances </li></a><br>
                         <a href=""><li> Créer mon CV </li></a>
                 </ul>
