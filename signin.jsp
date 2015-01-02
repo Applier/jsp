@@ -25,24 +25,6 @@
 					<a href="signup">S'inscrire</a>
 			</div>
 			
-			<%-- Vérification de la présence d'un objet utilisateur en session --%>
-			<span>Test session</span><br>
-                <c:if test="${!empty sessionScope.sessionUser}">
-                    <%-- Si l'utilisateur existe en session, alors on affiche son adresse email. --%>
-                    <span class="succes">Vous êtes connecté(e) avec l'adresse : ${sessionScope.sessionUser.mail}</span>
-                <%-- Vérification des modifs du profil --%>
-				<span>Test profil</span><br>
-	                <c:if test="${!empty sessionScope.sessionUser.infos}">
-	                    <%-- Si l'utilisateur existe en session, alors on affiche son adresse email. --%>
-	                    <span class="succes">Vous vous appelez : ${sessionScope.sessionUser.infos.prenom} ${sessionScope.sessionUser.infos.nom},<br>
-	                    vous êtes né(e) le ${sessionScope.sessionUser.infos.dateNaissance},<br>
-	                    vous habitez à l'adresse ${sessionScope.sessionUser.infos.adresse},<br>
-	                    votre numéro de téléphone est le ${sessionScope.sessionUser.infos.numTel},<br>
-	                    votre mail professionnel est ${sessionScope.sessionUser.infos.mailPro}</span>
-	                </c:if>
-                </c:if>
-                
-            
 	</form>
 </body>
 </html>
