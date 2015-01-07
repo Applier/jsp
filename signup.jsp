@@ -14,11 +14,9 @@
 			<h1>Inscription</h1>
 			
 			<input type="email" id="mail" name="mail" value="<c:out value="${user.mail}"/>" placeholder="Email"/><br>
-			<span class="erreur">${form.erreurs['mail']}</span>
 			
 			<input type="password" id="password" name="password" placeholder="Mot de passe"/>
 			<input type="password" id="confirmation" name="confirmation" placeholder="Confirmer mot de passe"/><br>
-			<span class="erreur">${form.erreurs['password']}</span>
 			
 			<button>S'inscrire</button>
 			<div class="links">
