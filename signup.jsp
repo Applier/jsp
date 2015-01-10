@@ -1,13 +1,15 @@
-<%@ page pageEncoding="UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>S'inscrire</title>
-		<link rel='stylesheet' type='text/css' href="<c:url value="/css/signin.css"/>" />
-		<script language="JavaScript">
+<head>
+<meta charset="utf-8">
+<title>S'inscrire</title>
+<link rel='stylesheet' type='text/css'
+	href="<c:url value="/css/signin.css"/>" />
+	
+	<script type="text/javascript">
             function verifform()
             {
                 //Verifier qu'il y a bien un mail
@@ -41,7 +43,7 @@
                 //Afficher le rouge et notifier l'utilisateur
                 confirmation.style.backgroundColor = goodColor;
                 message.style.color = goodColor;
-                message.innerHTML = "Mots de passe identiques."
+                message.innerHTML = "Mots de passe identiques.";
                 }else{
                 //Les mots de passes sont différents
                 //Afficher le vert et notifier l'utilisateur
@@ -74,23 +76,32 @@
                 }
             }
         </script>
-	</head>
-	<body>
+	
+</head>
+<body>
 		<form name="formulaire" method="post" action="<c:url value="signup" />">
 			<div class="logo"></div>
 			<h1>Inscription</h1>
-			
-			<input type="email" id="mail" name="mail" value="<c:out value="${user.mail}"/>" placeholder="Email"/><br>
+			<input type="email" id="mail" name="mail" value="<c:out value="${mail}"/>" placeholder="Email"/><br>
 			<input type="password" style="margin-left:5px" name="password" id="password" placeholder="Mot de passe" onkeyup="checkLength();return false;"/>
                 	<br>
-                	<span style="font-family:Open Sans;" id="LengthMessage" class="LengthMessage"></span>
+                	<span id="LengthMessage" class="LengthMessage"></span>
                 	<input type="password" style="margin-left:5px" name="confirmation" id="confirmation" onkeyup="checkPass();return false;" placeholder="Confirmer mot de passe"/>
                 	<br>
-                	<span style="font-family:Open Sans;" id="confirmMessage" class="confirmMessage"></span>
+                	<span id="confirmMessage" class="confirmMessage"></span>
                 	<button onClick="return verifform()">S'inscrire</button>
-			<div class="links">
-					<a href="signin">Se connecter</a>
-			</div>
-		</form>
-	</body>
+		<div class="links">
+			<a href="signin">Se connecter</a>
+		</div>
+
+		<%-- Vérification de la présence d'un objet utilisateur en session --%>
+		<p>Test session</p>
+		<c:if test="${!empty sessionScope.id}">
+			<%-- Si l'utilisateur existe en session, alors on affiche son adresse email. --%>
+			<p class="succes">Vous êtes connecté(e) avec l'adresse :
+				${sessionScope.id}</p>
+		</c:if>
+
+	</form>
+</body>
 </html>
