@@ -76,7 +76,7 @@
         </script>
 	</head>
 	<body>
-		<form class="formulaire" method="post" action="<c:url value="signup" />">
+		<form name="formulaire" method="post" action="<c:url value="signup" />">
 			<div class="logo"></div>
 			<h1>Inscription</h1>
 			
