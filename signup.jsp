@@ -93,15 +93,6 @@
 		<div class="links">
 			<a href="signin">Se connecter</a>
 		</div>
-
-		<%-- Vérification de la présence d'un objet utilisateur en session --%>
-		<p>Test session</p>
-		<c:if test="${!empty sessionScope.id}">
-			<%-- Si l'utilisateur existe en session, alors on affiche son adresse email. --%>
-			<p class="succes">Vous êtes connecté(e) avec l'adresse :
-				${sessionScope.id}</p>
-		</c:if>
-
 	</form>
 </body>
 </html>
