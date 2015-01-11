@@ -75,13 +75,14 @@
                 message.innerHTML = "Le mot de passe doit avoir au moins 5 caractères!"
                 }
             }
-        </script>
+        </script> 
 	
 </head>
 <body>
 		<form name="formulaire" method="post" action="<c:url value="signup" />">
 			<div class="logo"></div>
 			<h1>Inscription</h1>
+			
 			<input type="email" id="mail" name="mail" value="<c:out value="${mail}"/>" placeholder="Email"/><br>
 			<input type="password" style="margin-left:5px" name="password" id="password" placeholder="Mot de passe" onkeyup="checkLength();return false;"/>
                 	<br>
@@ -89,10 +90,20 @@
                 	<input type="password" style="margin-left:5px" name="confirmation" id="confirmation" onkeyup="checkPass();return false;" placeholder="Confirmer mot de passe"/>
                 	<br>
                 	<span id="confirmMessage" class="confirmMessage"></span>
+                	
+                	<%-- Vérification du succès de l'inscription --%>
+		
+					<c:if test="${empty sessionScope.id}">
+						<span><br>${erreur}</span>
+					</c:if>
+                	
                 	<button onClick="return verifform()">S'inscrire</button>
 		<div class="links">
 			<a href="signin">Se connecter</a>
 		</div>
+
+		
+
 	</form>
 </body>
 </html>
