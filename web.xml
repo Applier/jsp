@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app 
-  xmlns="http://java.sun.com/xml/ns/javaee"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-  version="3.0">
-  
-  <servlet>
-  	<servlet-name>Inscription</servlet-name>
-    <servlet-class>intergiciels.servlets.Signup</servlet-class>
-  </servlet>
-    
-  <servlet-mapping>
-  	<servlet-name>Inscription</servlet-name>
-    <url-pattern>/signup</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-  	<servlet-name>Connexion</servlet-name>
-  	<servlet-class>intergiciels.servlets.Signin</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>Connexion</servlet-name>
-  	<url-pattern>/signin</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-  	<servlet-name>Déconnexion</servlet-name>
-  	<servlet-class>intergiciels.servlets.Signout</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>Déconnexion</servlet-name>
-  	<url-pattern>/signout</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-  	<servlet-name>Index</servlet-name>
-  	<servlet-class>intergiciels.servlets.Index</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>Index</servlet-name>
-  	<url-pattern>/index</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-  	<servlet-name>Profil</servlet-name>
-  	<servlet-class>intergiciels.servlets.Profil</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>Profil</servlet-name>
-  	<url-pattern>/profil</url-pattern>
-  </servlet-mapping>
- 
-  
-
-    	
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<servlet>
+		<servlet-name>Inscription</servlet-name>
+		<servlet-class>intergiciels.servlets.Signup</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Connexion</servlet-name>
+		<servlet-class>intergiciels.servlets.Signin</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Déconnexion</servlet-name>
+		<servlet-class>intergiciels.servlets.Signout</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Index</servlet-name>
+		<servlet-class>intergiciels.servlets.Index</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Profil</servlet-name>
+		<servlet-class>intergiciels.servlets.Profil</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Correspondances</servlet-name>
+		<servlet-class>intergiciels.servlets.Correspondances</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CV</servlet-name>
+		<servlet-class>intergiciels.servlets.CV</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Inscription</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Connexion</servlet-name>
+		<url-pattern>/signin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Déconnexion</servlet-name>
+		<url-pattern>/signout</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Index</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Profil</servlet-name>
+		<url-pattern>/profil</url-pattern>
+	</servlet-mapping>	
+	<servlet-mapping>
+		<servlet-name>Correspondances</servlet-name>
+		<url-pattern>/correspondances</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CV</servlet-name>
+		<url-pattern>/cv</url-pattern>
+	</servlet-mapping>
 </web-app>
